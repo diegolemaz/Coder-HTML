@@ -1,23 +1,13 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-
 /* ESTILOS EN BODY */
 
 body {
     font-family: 'Bevan', cursive;
-
-
-    /* width: 100vw;
-    height: 100vh; */
 }
  
 
 
 /* ESTILOS EN HEADER */
+
 div h1 {
     font-size: 2em !important;
     font-family: 'Holtwood One SC', serif;
@@ -45,19 +35,10 @@ nav ul li a {
 /* ESTILOS EN MAIN */
 
 main {
-    /* padding: 20px; */
-    /* background-color: burlywood; */
-     min-height: 100vh; 
+    min-height: 100vh; 
     background: rgb(222, 184, 135);
     background: linear-gradient(90deg, rgba(222, 184, 135, 1) 0%, rgba(217, 184, 135, 1) 33%, rgba(255, 183, 0, 1) 100%);
-
-
 }
-
-
-/* ESTILOS EN HEADER */
-
-
 
 /* ESTILOS EN FOOTER */
 
@@ -73,8 +54,6 @@ footer {
     padding: 10px;
 }
 
-
-
 /* ANIMACIONES */
 .logo_titulo  {
     animation-name: animacion_titulo;
@@ -88,4 +67,13 @@ footer {
     }
 
     to { }
+}
+
+/* ESTILOS EN BOTONES */
+.tipoBoton {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    background: rgba(255, 183, 0, 1) !important
 }
