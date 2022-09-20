@@ -1,74 +1,129 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/image/logo_garrison.jpeg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./assets/image/logo_garrison_chico.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Holtwood+One+SC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/703261d60f.js" crossorigin="anonymous"></script>
-    <title>THE GARRISON - Distribuidor de bebidas alcohólicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <title>THE GARRISON - Inicio</title>
+
 </head>
 
-<body id="body_grilla">
-    <header>
-        <div class="df_contenedor_titulo">
-            <img src="./assets/image/logo_garrison_chico.jpg" alt="Logo"></img>
-            <h1 class="nombre-empresa">Distribuidor de bebidas alcohólicas</h1>
+<body>
+
+    <header class="container-fluid">
+
+        <div class="logo_titulo row">
+            <img src="./assets/image/logo_garrison_chico.jpg" alt="logo_garrison" class="col-2"></img>
+            <h1 class="col-8 display-4 align-items-center d-flex">Distribuidor de bebidas alcólicas</h1>
         </div>
-    </header> 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/market.html">Market</a></li>
-                <li><a href="./pages/login_registro.html">Login/Registro</a></li>
-                <li><a href="./pages/tragos.html">Recetas Tragos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+    </header>
+
+    <nav class="container-fluid">
+        <header class="d-flex justify-content-center">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="./pages/market.html"" class=" nav-link">Market</a></li>
+                <li class="nav-item"><a href="./pages/login_registro.html" class="nav-link">Login/Registro</a></li>
+                <li class="nav-item"><a href="./pages/tragos.html" class="nav-link">Recetas Tragos</a></li>
+                <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
             </ul>
-        </nav>
+        </header>
+    </nav>
 
-    
+    <main class="container-fluid">
+        <div class="row" id="main">
+            <section class="col-10 d-flex flex-column justify-content-center">
+                <h2 class=" subtitulo"> Nuestra historia</h2>
+                <img class="historia__imagen" src="./assets/image/001.png" alt="Botellas de bebidas"></img>
+                <p> Comenzamos en 2019 en medio de una pandemia mundial, la cual nos catapultó
+                    al tener envios a todo el pais.
+                    Nos dedicamos a la comercialización de bebidas alcohólicas y analcohólicas para fiestas y eventos.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestias quae architecto,
+                    doloremque fuga rem enim iusto neque iste ipsa corporis eligendi assumenda qui porro veniam culpa
+                    doloribus quo eveniet minus!
+                    Aspernatur aliquid odit possimus iste autem, dolorem doloremque labore eum tempora sunt praesentium
+                    consequuntur libero aliquam sit debitis? Quis asperiores nisi impedit voluptas maxime, magni vel
+                    fugiat earum quas,
+                    culpa placeat aliquam iure. Amet facilis quaerat suscipit minus, nam doloribus expedita, est,
+                    perferendis tenetur nihil similique accusamus iusto eius architecto et omnis ipsam voluptate libero
+                    dolore? Aut,
+                    vitae soluta vero doloribus illum officia ullam animi, omnis non, voluptate cupiditate. </p>
 
-    <main>
-        <div class="df_contenedor_historia">
-            <h2 class="subtitulo"> Nuestra historia</h2>
-            <img class="historia__imagen" src="./assets/image/001.png" alt="Botellas de bebidas"></img>
-            <p class="historia__texto"> Comenzamos en 2019 en medio de una pandemia mundial, la cual nos catapultó
-                al tener envios a todo el pais.
-                Nos dedicamos a la comercialización de bebidas alcohólicas y analcohólicas para fiestas y eventos.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestias quae architecto,
-                doloremque fuga rem enim iusto neque iste ipsa corporis eligendi assumenda qui porro veniam culpa
-                doloribus quo eveniet minus!
-                Aspernatur aliquid odit possimus iste autem, dolorem doloremque labore eum tempora sunt praesentium
-                consequuntur libero aliquam sit debitis? Quis asperiores nisi impedit voluptas maxime, magni vel
-                fugiat earum quas,
-                culpa placeat aliquam iure. Amet facilis quaerat suscipit minus, nam doloribus expedita, est,
-                perferendis tenetur nihil similique accusamus iusto eius architecto et omnis ipsam voluptate libero
-                dolore? Aut,
-                vitae soluta vero doloribus illum officia ullam animi, omnis non, voluptate cupiditate. </p>
+                <p class="lead">Tenemos los mejores precios en las marcas mas reconocidas. Envío gratis en
+                    compras mayores a $2000.</p>
+            </section>
+            <section class="col-2 d-flex flex-column justify-content-around">    
+                <div id="carouselvendidos" class="carousel slide" data-bs-ride="carousel">
+                    <h6 class="text-center">Los más vendidos:</h5>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/image/cerveza-budweiser-355ml-600x600.png" class="d-block w-100"
+                                alt="Los más vendidos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/image/cerveza-corona-355ml-600x600.png" class="d-block w-100" alt="Los más vendidos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/image/cerveza-zillertal-lata-473-ml-600x600.png" class="d-block w-100"
+                                alt="Los más vendidos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/image/espirituosas-jagermeifter-700ml-600x600.png" class="d-block w-100"
+                                alt="Los más vendidos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/image/espirituosas-vodka-smirnoff-ice-275ml-600x600.png"
+                                class="d-block w-100" alt="Los más vendidos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/image/GRAPAMIEL-600x600.png" class="d-block w-100" alt="Los más vendidos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/image/espirituosas-fernet-branca-750ml-600x600.png" class="d-block w-100"
+                                alt="Los más vendidos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/image/espirituosas-gin-tanqueray-600x600.png" class="d-block w-100"
+                                alt="Los más vendidos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/image/espirituosas-ron-havana-anejo-especial-750ml-600x600.png"
+                                class="d-block w-100" alt="Los más vendidos">
+                        </div>
 
-            <p class="main__envio"> Tenemos los mejores precios en las marcas mas reconocidas. Envío gratis en compras
-                mayores a $2000.</p>
+                    </div>
+                </div>
+                <img src="./assets/image/banner_black_friday.png" class="d-block w-100" alt="banner black friday">
         </div>
+        </section>
+        
     </main>
-
-
-    <footer>
-        <div class="df_contenedor_footer"
-        <p>© 2022 - Todos los derechos reservados. | 18 de julio 1234, Montevideo | Tel. 0800 0000</p>
-            <div class="redes">
-            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    <footer class="container-fluid d-flex justify-content-between">
+        <div class="flex-row d-flex align-items-center">
+            <p>© 2022 - Todos los derechos reservados. | 18 de julio 1234, Montevideo | Tel. 0800 0000</p>
         </div>
+        <div class="flex-row d-flex align-items-center">
+            <a class="href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class=href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a class="href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
         </div>
+
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
