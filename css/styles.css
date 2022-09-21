@@ -62,8 +62,8 @@ footer {
 
 @keyframes animacion_titulo {
     from {
+        
         transform: translate(1400px);
-        background-color: rgb(219, 24, 24) !important;
     }
 
     to { }
