@@ -1,0 +1,20 @@
+div h1 {
+    font-size: 2em !important;
+    font-family: $font-cabezal;
+}
+
+.logo_titulo {
+    color: $col-crudo;
+    background-image: linear-gradient(to right, $col-oscuro 20%, $col-crudo);
+    animation-name: animacion_titulo;
+    animation-duration: 3s;
+}
+
+@keyframes animacion_titulo {
+    from {
+
+        transform: translate(1400px);
+    }
+
+    to {}
+}
