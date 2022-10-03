@@ -17,7 +17,6 @@
 
 <body>
     <header class="container-fluid">
-
         <div class="logo_titulo row">
             <img src="../assets/image/logo_garrison_chico.jpg" alt="logo_garrison" class="col-2"></img>
             <h1 class="col-sm-8 col-xs-12 display-4 align-items-center d-flex">Distribuidor de bebidas alcólicas</h1>
@@ -25,35 +24,35 @@
     </header>
 
     <nav class="container-fluid">
-        <header class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="../index.html" class="nav-link" aria-current="page">Inicio</a></li>
-                <li class="nav-item"><a href="../pages/market.html"" class=" nav-link">Market</a></li>
+                <li class="nav-item"><a href="../pages/market.html" class="nav-link">Market</a></li>
                 <li class="nav-item"><a href="../pages/login_registro.html" class="nav-link active">Login/Registro</a>
                 </li>
                 <li class="nav-item"><a href="../pages/tragos.html" class="nav-link">Recetas Tragos</a></li>
                 <li class="nav-item"><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
             </ul>
-        </header>
+        </div>
     </nav>
     <main class="container-fluid py-3">
         <div class="row d-flex ">
             <h2 class="subtitulo"> Login/Registro</h2>
 
             <form action="inicio_sesion" method="get" enctype="text/plain">
-        </div>
-        <div class="mb-3 col-lg-4 col-md-6 col-sm-8 col-xs-12">
-            <label for="login_user" class="form-label mb-3">Usuario: </label>
-            <input type="text" id="login_user" class="form-control mb-3" required />
+        
+                <div class="mb-3 col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                    <label for="login_user" class="form-label mb-3">Usuario: </label>
+                    <input type="text" id="login_user" class="form-control mb-3" required />
 
-            <label for="login_pass" class="form-label mb-3">Password: </label>
-            <input type="password"" id=" login_pass" class="form-control mb-3" required />
+                    <label for="login_pass" class="form-label mb-3">Password: </label>
+                    <input type="password" id="login_pass" class="form-control mb-3" required />
 
-            <input class="tipoBoton fluid d-block mx-auto" type="button" value="Ingresar" />
-            <input class="tipoBoton fluid d-block mx-auto" type="button" value="Registrarme" />
+                    <input class="tipoBoton fluid d-block mx-auto" type="button" value="Ingresar"/>
+                    <input class="tipoBoton fluid d-block mx-auto" type="button" value="Registrarme"/>
 
-        </div>
-        </form>
+                </div>
+            </form>
         </div>
 
     </main>

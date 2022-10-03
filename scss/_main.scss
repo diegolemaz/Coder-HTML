@@ -3,3 +3,7 @@ main {
     background: $col-grad-crudo;
     background: linear-gradient(90deg, $col-grad-crudo 0%, $col-grad-inter 33%, $col-realce 100%);
 }
+
+.tabla_market { background-color: $col-oscuro;
+    color: $col-crudo;
+}
