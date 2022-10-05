@@ -1,9 +1,10 @@
 main {
     min-height: 100vh;
-    background: $col-grad-crudo;
-    background: linear-gradient(90deg, $col-grad-crudo 0%, $col-grad-inter 33%, $col-realce 100%);
+    background: map-get($col, grad-crudo);
+    background: linear-gradient(90deg, map-get($col,grad-crudo) 0%, map-get($col,grad-inter) 33%, map-get($col,realce) 100%);
 }
 
-.tabla_market { background-color: $col-oscuro;
-    color: $col-crudo;
+.tabla_market { 
+    background-color: map-get($col,crudo);
+    color: map-get($col,oscuro);
 }

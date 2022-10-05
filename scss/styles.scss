@@ -1,12 +1,11 @@
 @import "./variables";
 @import "./header";
-@import "./nav";
 @import "./main";
 @import "./footer";
 
 body {
     font-family: $font-normal;
-    background-color: $col-crudo  !important;
+    background-color: map-get($col,crudo)  !important;
 }
 
 .tipoBoton {
@@ -14,5 +13,15 @@ body {
     padding-right: 10px;
     margin: 10px;
     border-radius: 7px;
-    background: $col-realce  !important
+    background-color: map-get($col,realce);
+}
+
+.tipoBoton--verde {
+    @extend .tipoBoton;
+    background-color: green;
+}
+
+.tipoBoton--rojo {
+    @extend .tipoBoton;
+    background-color: red;
 }

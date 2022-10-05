@@ -1,12 +1,15 @@
-    // COLORES  
-    $col-grad-inter: rgba(217, 184, 135, 1);
-    $col-grad-crudo: rgba(222, 184, 135,1);
-    $col-realce: rgba(255, 183, 0, 1);
-    $col-oscuro: rgba(0, 0, 0, 255);
-    $col-crudo: rgba(239, 239, 239, 255);
+    // MAPA DE COLORES  
+    $col: (
+        grad-inter: rgba(217, 184, 135, 1),
+        grad-crudo: rgba(222, 184, 135,1),
+        realce: rgba(255, 183, 0, 1),
+        oscuro: rgba(0, 0, 0, 255),
+        crudo: rgba(239, 239, 239, 255),
+    );
    
     // FUENTES
     $font-cabezal: ('Holtwood One SC', serif);
     $font-titulo: ('Holtwood One SC', serif);
     $font-normal: ('Bevan', cursive);
 
+ 

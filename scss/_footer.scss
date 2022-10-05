@@ -1,11 +1,15 @@
+@mixin est-footer-letra {
+    color: map-get($col,crudo)
+}
+
 footer {
-    background-color: $col-oscuro  !important;
-    color: $col-crudo;
+    @include est-footer-letra;
+    background-color: map-get($col,oscuro) !important;
 }
 
 .fa-brands {
-    color: $col-crudo  !important;
+   @include est-footer-letra;
     font-size: 30px;
     margin: 10px;
-    padding: 10px;
+    padding: 10px; 
 }
