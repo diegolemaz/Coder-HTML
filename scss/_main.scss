@@ -1,10 +1,28 @@
 main {
     min-height: 100vh;
     background: map-get($col, grad-crudo);
-    background: linear-gradient(90deg, map-get($col,grad-crudo) 0%, map-get($col,grad-inter) 33%, map-get($col,realce) 100%);
+    background: linear-gradient(90deg, map-get($col, grad-crudo) 0%, map-get($col, grad-inter) 33%, map-get($col, realce) 100%);
 }
 
-.tabla_market { 
-    background-color: map-get($col,crudo);
-    color: map-get($col,oscuro);
+// ESTILOS EN MARKET
+.tabla_market {
+    background-color: map-get($col, crudo);
+    color: map-get($col, oscuro);
+}
+
+// ESTILOS EN MARKET ULTIMO AGREGADO
+.tabla_market {
+    tr {
+        &:hover {
+            td {
+                img {
+                    padding: 50px;
+                    transition: transform .2s;
+                    width: 200px;
+                    height: 200px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }
