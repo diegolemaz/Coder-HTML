@@ -1,19 +1,19 @@
-// ANIMACIONES 
+// ESTILO LOGO
 div h1 {
     font-size: 2em !important;
     font-family: $font-cabezal;
 }
 
+// ANIMACIONES 
 .logo_titulo {
     color: map-get($col,oscuro);
-    background-image: linear-gradient(to right, map-get($col,crudo) 20%, map-get($col,oscuro));
+    background-image: linear-gradient(to right, map-get($col,crudo) 30%, map-get($col,oscuro));
     animation-name: animacion_titulo;
     animation-duration: 3s;
 }
 
 @keyframes animacion_titulo {
     from {
-
         transform: translate(1400px);
     }
 
@@ -31,16 +31,12 @@ nav {
                 transition: all 1s;
                 background-color: map-get($col,realce);
             }
-
             a {
                 font-family: $font-titulo;
-                color: map-get($col,oscuro)  !important;
-
+                color: map-get($col,oscuro) !important;
             }
-
         }
     }
-
 }
 
 .nav-pills .nav-link.active {

@@ -1,10 +1,70 @@
+// ESTILO MAIN
 main {
     min-height: 100vh;
-    background: map-get($col, grad-crudo);
-    background: linear-gradient(90deg, map-get($col,grad-crudo) 0%, map-get($col,grad-inter) 33%, map-get($col,realce) 100%);
+    background-image: url(../assets/image/fondo-suelo-madera-clara.webp);
 }
 
+// ESTILO MARKET
 .tabla_market { 
     background-color: map-get($col,crudo);
     color: map-get($col,oscuro);
+    font-size: 2.3vh;
+}
+
+.img_producto_market {
+    width: 250px;
+}
+
+.img_metodos_pago {
+    width: 750px;
+}
+
+// ESTILO LOGIN
+.inicio_sesion {
+    background-image: url(../assets/image/cartel_garrison.jpeg);
+    color: map-get($col,oscuro);
+}
+
+// ESTILO FORMULARIO CONTACTO
+.contacto_pagina {
+    background-image: url(../assets/image/saloon_garrison.jpeg);
+    color: map-get($col,crudo);
+}
+
+// ESTILO IMAGENES
+#error_404 {
+  width: 450px; 
+  height: 261px;
+
+}
+
+// ESTILOS BOTONES
+#link_terminarpedido {
+    text-decoration: none;
+}
+
+.tipoBoton {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    background-color: map-get($col,realce);
+    &:hover {
+        transform: scale(1.3);
+        transition: all 1s;
+    }
+}
+
+.tipoBoton--verde {
+    @extend .tipoBoton;
+    background-color: rgb(1, 44, 1);
+    color: map-get($col,crudo);
+    border-color:map-get($col,crudo);
+}
+
+.tipoBoton--rojo {
+    @extend .tipoBoton;
+    background-color: rgb(88, 0, 0);
+    color: map-get($col,crudo);
+    border-color:map-get($col,crudo);
 }

@@ -3,25 +3,11 @@
 @import "./main";
 @import "./footer";
 
+// ESTILOS GENERALES BODY
 body {
     font-family: $font-normal;
     background-color: map-get($col,crudo)  !important;
+    font-size: large;
 }
 
-.tipoBoton {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    border-radius: 7px;
-    background-color: map-get($col,realce);
-}
 
-.tipoBoton--verde {
-    @extend .tipoBoton;
-    background-color: green;
-}
-
-.tipoBoton--rojo {
-    @extend .tipoBoton;
-    background-color: red;
-}
